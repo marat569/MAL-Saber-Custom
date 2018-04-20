@@ -2,7 +2,7 @@
 
 A modular version of the MAL Saber theme.
 
-MAL Saber Custom. CSS’s contents are what are pasted into MAL's theme settings.
+MAL Saber Custom. CSS’s contents are what are to pasted into MAL's theme settings. ( https://raw.githubusercontent.com/marat569/MAL-Saber-Custom/master/MAL%20Saber%20Custom.css )
 
 The theme is modular, edit variables in the labeled section. Use either the images that come with the CSS, images in the release section, or make your own.
 
