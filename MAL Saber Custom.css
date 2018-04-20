@@ -15,19 +15,19 @@ Potential to-do list:
 Variables for static images
 Variable names correlate to the filename of the default images.
  */	
-  --fatedropmenu: url(http://i.imgur.com/DV3hytm.png); /* Image shown when mousing over the top right menu */
+  --fatedropmenu: url(https://github.com/marat569/MAL-Saber-Custom/releases/download/0.1/fatedropmenu.png); /* Image shown when mousing over the top right menu */
   
-  --bluebackground: url(https://i.imgur.com/b22YTva.jpg);
+  --bluebackground: url(https://github.com/marat569/MAL-Saber-Custom/releases/download/0.2/darkerpurplebackground.jpg);
   
-  --saber: url(https://i.imgur.com/z9t8dUp.png); /*Character ontop of the list*/
+  --saber: url(https://github.com/marat569/MAL-Saber-Custom/releases/download/0.2/Jeanne_and_Jalter.png); /*Character ontop of the list*/
   
-  --sectionheaders: url(http://i.imgur.com/xApmJde.png);
+  --sectionheaders: url(https://github.com/marat569/MAL-Saber-Custom/releases/download/0.1/sectionheaders.png);
   
-  --sectioncorners: url(http://i.imgur.com/eTMjl9W.png);
+  --sectioncorners: url(https://github.com/marat569/MAL-Saber-Custom/releases/download/0.1/sectioncorners.png);
   
-  --animation1: url(http://i.imgur.com/sWW0xCu.png);
+  --animation1: url(https://github.com/marat569/MAL-Saber-Custom/releases/download/0.1/animation1.png);
   
-  --animation2: url(http://i.imgur.com/KzNIhqF.png);
+  --animation2: url(https://github.com/marat569/MAL-Saber-Custom/releases/download/0.1/animation2.png);
 }
 
 #list_surround > table:first-of-type:before, #list_surround > table:first-of-type a, #list_surround > table:first-of-type a:after {
@@ -259,7 +259,8 @@ td[class^='td']:last-child { text-align: right; padding-right: 5px; border-right
 	width: 730px;
 	height: 78px;
 	margin-left: -20px;
-	margin-top: -20px;	z-index: -1;
+	margin-top: -20px;
+	z-index: -1;
 }
 
 .category_totals {
@@ -292,7 +293,8 @@ td[class^='td']:last-child { text-align: right; padding-right: 5px; border-right
 }
 
 #copyright a { font-size: 10px; color: #FFFFFF; }
-#inlineContent {
+
+#inlineContent {
 	display: inline !important;
 	position: fixed;
 	top: 0;
@@ -333,7 +335,9 @@ td[class^='td']:last-child { text-align: right; padding-right: 5px; border-right
     display: none;
 } 
 
-.table_header span { display: none; }/* Disable Tags in the Sort Options */
+.table_header span { display: none; }
+
+/* Disable Tags in the Sort Options */
 .table_header[width="125"] { display: none !important; }
 
 #list_surround table:nth-of-type(3):before, .table_header a, .table_headerLink strong {
@@ -351,7 +355,8 @@ td[class^='td']:last-child { text-align: right; padding-right: 5px; border-right
 	content: 'Sort';
 	margin-top: 100px;
 	right: 36px;
-	width: 50px;	font-size: 16px;
+	width: 50px;
+	font-size: 16px;
 	background-image: linear-gradient(top, rgb(38, 70, 185) 40%, rgb(13, 23, 76) 60%);
 	background-image: -moz-linear-gradient(top, rgb(38, 70, 185) 40%, rgb(13, 23, 76) 60%);
 	background-image: -webkit-linear-gradient(top, rgb(38, 70, 185) 40%, rgb(13, 23, 76) 60%);
@@ -411,7 +416,9 @@ td[class^='td']:last-child { text-align: right; padding-right: 5px; border-right
 	color: #e2de9a !important;
 	font-size: 24px !important;
 	text-align: center;
-}#mal\_control_strip:before {
+}
+
+#mal\_control_strip:before {
 	opacity: 1;
 	position: absolute;
 	display: block;
@@ -439,11 +446,13 @@ td[class^='td']:last-child { text-align: right; padding-right: 5px; border-right
 	display: block !important;
 	margin-top: -100px !important;
 	height: 100px !important;
-	left: 0;	top: 0;
+	left: 0;
+	top: 0;
 	background: var(--fatedropmenu) left center no-repeat,
 			      -moz-linear-gradient(bottom, rgb(48, 48, 48) 1%, rgb(255, 255, 255) 3%, rgb(255, 255, 255) 100%) !important;
 	background: var(--fatedropmenu) left center no-repeat,
-			      -webkit-linear-gradient(bottom, rgb(48, 48, 48) 1%, rgb(255, 255, 255) 3%, rgb(255, 255, 255) 100%) !important;	background: var(--fatedropmenu) left center no-repeat,
+			      -webkit-linear-gradient(bottom, rgb(48, 48, 48) 1%, rgb(255, 255, 255) 3%, rgb(255, 255, 255) 100%) !important;
+	background: var(--fatedropmenu) left center no-repeat,
 			      linear-gradient(to top, rgb(48, 48, 48) 1%, rgb(255, 255, 255) 3%, rgb(255, 255, 255) 100%) !important;
 	-webkit-transition: margin-top .5s ease-out, z-index .5s linear .2s;
 	transition: margin-top .5s ease-out, z-index .5s linear .2s;
@@ -459,8 +468,13 @@ td[class^='td']:last-child { text-align: right; padding-right: 5px; border-right
 	z-index: 5; 
 }
 
-#mal\_control_strip a:hover:after { 	color: #dbd352 !important;
-	-webkit-transition: color .3s linear;	transition: color .3s linear;}#mal\_control_strip td  { display: inline !important; }
+#mal\_control_strip a:hover:after { 
+	color: #dbd352 !important;
+	-webkit-transition: color .3s linear;
+	transition: color .3s linear;
+}
+
+#mal\_control_strip td  { display: inline !important; }
 
 #mal\_control_strip img, #mal\_cs_powered, #mal\_cs_powered img, #mal\_cs_pic, #mal\_cs_otherlinks strong { display: none; }
 
@@ -489,7 +503,8 @@ td[class^='td']:last-child { text-align: right; padding-right: 5px; border-right
 	border-right: solid 1px #dbd352;
 }
 
-/*  USERNAME */
+/*  USERNAME */
+
 #mal\_cs_listinfo div:first-of-type a:after { content: 'Profile'; margin-left: -400px; }
 
 /* ADD */
@@ -507,8 +522,21 @@ td[class^='td']:last-child { text-align: right; padding-right: 5px; border-right
 
 /* LOGOUT */
 #mal\_cs_listinfo div:last-of-type a { margin-left: -100px; }
-#mal\_cs_listinfo div:last-of-type a:after { content: 'Logout'; border: none; }/* LOGIN */
-#mal\_cs_otherlinks div a[href*="login"]:after { content: 'Login'; margin-left: -300px; }/* CREATE A LIST */#mal\_cs_otherlinks div a[href*="register"] { margin-left: -200px; }#mal\_cs_otherlinks div a[href*="register"]:after { content: 'Register'; }/* FAQ */#mal\_cs_otherlinks div a[href*="forum"] { margin-left: -100px; }#mal\_cs_otherlinks div a[href*="forum"]:after { content: 'Help'; border: none; }
+
+#mal\_cs_listinfo div:last-of-type a:after { content: 'Logout'; border: none; }
+
+/* LOGIN */
+#mal\_cs_otherlinks div a[href*="login"]:after { content: 'Login'; margin-left: -300px; }
+
+/* CREATE A LIST */
+#mal\_cs_otherlinks div a[href*="register"] { margin-left: -200px; }
+
+#mal\_cs_otherlinks div a[href*="register"]:after { content: 'Register'; }
+
+/* FAQ */
+#mal\_cs_otherlinks div a[href*="forum"] { margin-left: -100px; }
+
+#mal\_cs_otherlinks div a[href*="forum"]:after { content: 'Help'; border: none; }
 
 #search {
 	position: absolute; 
