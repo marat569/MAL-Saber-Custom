@@ -569,3 +569,15 @@ td[class^='td']:last-child { text-align: right; padding-right: 5px; border-right
     position: absolute;
 }
 
+
+/*
+HORIZONTAL LINES
+*/
+.td1, .td2, .table_header {
+border-style: solid;
+border-color: #ddc38b;
+border-width: 0 0 1px !important;
+}
+td.table_header:nth-of-type(1) {
+border-right-width: 0 !important;
+}
