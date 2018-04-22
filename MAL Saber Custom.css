@@ -28,6 +28,13 @@ Variable names correlate to the filename of the default images.
   --animation1: url(https://github.com/marat569/MAL-Saber-Custom/releases/download/0.1/animation1.png);
   
   --animation2: url(https://github.com/marat569/MAL-Saber-Custom/releases/download/0.1/animation2.png);
+  
+ /*
+ Variables for other elements
+ */
+	--maincolor: #ddc38b; /*Default is #ddc38b , a goldish color, mostly borders */
+	--fontcolor: #ddc38b; /*Default is #ddc38b */
+	--fontcolortwo: #e6ca8b; /*default is #e6ca8b */
 }
 
 #list_surround > table:first-of-type:before, #list_surround > table:first-of-type a, #list_surround > table:first-of-type a:after {
@@ -51,7 +58,7 @@ Variable names correlate to the filename of the default images.
 	background-image: -webkit-linear-gradient(top, rgb(38, 70, 185) 40%, rgb(13, 23, 76) 60%);
 	box-shadow: 0 0 2px #000000 inset;
 	border-style: solid;
-	border-color: #ddc38b;
+	border-color: var(--maincolor);
 	border-width: 0 0 1px 0;
 	transition: opacity .5s linear .3s;
 	-webkit-transition: opacity .5s linear .3s;
@@ -165,10 +172,10 @@ body {
 	background-size: cover;
 	font-family: 'Crimson Text', serif;
 	font-size: 14px;
-	color: #ddc38b;
+	color: var(--fontcolor);
 }
 
-a { color: #ddc38b; text-decoration: none; }
+a { color: var(--fontcolor); text-decoration: none; }
 
 #list_surround {
 	background: var(--saber) no-repeat center 0 !important;
@@ -180,7 +187,7 @@ a { color: #ddc38b; text-decoration: none; }
 #list_surround br { display:none; }
 
 .td1, .td2 { 
-	color: ##ddc38b; 
+	color: var(--fontcolor); 
 	background-color: rgba(0, 0, 0, .3);
 }
 
@@ -188,7 +195,7 @@ a { color: #ddc38b; text-decoration: none; }
 
 .borderRBL {
 	color: #FFFFFF !important; 
-	border-top: solid 1px #ddc38b !important; 
+	border-top: solid 1px var(--maincolor) !important; 
 }
 
 .borderRBL small { visibility: visible !important; }
@@ -201,15 +208,15 @@ tr:hover td[class^='td']:not(.borderRBL) {
 
 td[class^='td']:first-child, td[class^='td']:last-child { width: 50px !important; }
 
-td[class^='td']:first-child { text-align: left; padding-left: 5px; border-left: double 4px #ddc38b !important; }
+td[class^='td']:first-child { text-align: left; padding-left: 5px; border-left: double 4px var(--maincolor) !important; }
 
-td[class^='td']:last-child { text-align: right; padding-right: 5px; border-right: double 4px #ddc38b !important; }
+td[class^='td']:last-child { text-align: right; padding-right: 5px; border-right: double 4px var(--maincolor) !important; }
 
 .animetitle + small {
 	visibility: visible !important;
 	text-transform: lowercase;
 	font-size: 13px;
-	color: #e6ca8b;
+	color: var(--fontcolortwo);
 	margin-left: 5px;
 }
 
@@ -265,7 +272,7 @@ td[class^='td']:last-child { text-align: right; padding-right: 5px; border-right
 
 .category_totals {
 	padding: 20px 0;
-	color: #ddc38b;
+	color: var(--fontcolor);
 	text-align: center;
 	text-transform: lowercase !important;
 }
@@ -362,7 +369,7 @@ td[class^='td']:last-child { text-align: right; padding-right: 5px; border-right
 	background-image: -webkit-linear-gradient(top, rgb(38, 70, 185) 40%, rgb(13, 23, 76) 60%);
 	box-shadow: 0 0 2px #000000 inset;
 	border-style: solid;
-	border-color: #ddc38b;
+	border-color: var(--maincolor);
 	border-width: 0 1px 1px 0;
 	border-bottom-right-radius: 6px;
 	transition: opacity .5s linear .3s;
@@ -432,7 +439,7 @@ td[class^='td']:last-child { text-align: right; padding-right: 5px; border-right
 	background-image: linear-gradient(top, rgb(38, 70, 185) 40%, rgb(13, 23, 76) 60%);
 	box-shadow: 0 0 2px #000000 inset;
 	border-style: solid;
-	border-color: #ddc38b;
+	border-color: var(--maincolor);
 	border-width: 0 0 1px 1px;
 	border-bottom-left-radius: 6px;
 	-webkit-transition: opacity .5s linear .3s;
@@ -575,7 +582,7 @@ HORIZONTAL LINES
 */
 .td1, .td2, .table_header {
 border-style: solid;
-border-color: #ddc38b;
+border-color: var(--maincolor);
 border-width: 0 0 1px !important;
 }
 td.table_header:nth-of-type(1) {
