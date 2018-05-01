@@ -41,7 +41,7 @@ Textbox variables
 \A = New line
 \25C8 for diamond
 */
-	--textcontent: "\25C8 Disliked Genres: \A SoL, Drama, Comedy, Sports. \A \A \25C8 My Rating System: \A 10: Loved it \A 9: Enjoyed it \A 8: Enjoyed it, but not as much as 9 \A 7: Better than watching nothing \A Note: I don't rate anything under than a 7";
+	--textcontent: "\25C8 Disliked Genres: \A SoL, Drama, Comedy, Sports. \A \A \25C8 My Rating System: \A 10: Loved it \A 9: Enjoyed it \A 8: Enjoyed it, but not as much as 9 \A 7: Better than watching nothing \A Note: I don't rate anything lower than a 7";
 }
 
 #list_surround > table:first-of-type:before, #list_surround > table:first-of-type a, #list_surround > table:first-of-type a:after {
@@ -184,11 +184,24 @@ body {
 
 a { color: var(--fontcolor); text-decoration: none; }
 
+/*Firefox*/
+@-moz-document url-prefix() {
+#list_surround {
+	background: var(--saber) no-repeat center 0 !important;
+	margin: 20px auto 5px;
+	padding: 96px 0 2px;
+	width: 690px;
+	}	
+}
+
+/*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
 #list_surround {
 	background: var(--saber) no-repeat center 0 !important;
 	margin: 20px auto 5px;
 	padding: 113px 0 2px;
 	width: 690px;
+		}
 }
 
 #list_surround br { display:none; }
